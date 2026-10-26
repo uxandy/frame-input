@@ -1,0 +1,13 @@
+windows/config.json
+*.log
+__pycache__/
+*.pyc
+local/
+dist/
+vhui*.exe
+vhusbd*
+.DS_Store
+.env
+.env.*
+*.pem
+*.key

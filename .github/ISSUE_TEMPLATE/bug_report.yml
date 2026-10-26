@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a setup or input-switching problem
+body:
+  - type: markdown
+    attributes:
+      value: "Please check docs/troubleshooting.md first. Remove IP addresses, usernames, serials, license keys and credentials from any output. Use private vulnerability reporting for security issues."
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: Frame Input, SteamOS/Steam, Windows/PowerShell, and VirtualHere server/client versions
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include steps, expected behavior, exact error, and whether it reproduces.
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: Receiver and recovery checks
+      description: Is the receiver plugged into Frame? Does it work locally? Can the stock VirtualHere client see/use it? Does Stop Sharing restore it?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized output
+      description: Relevant errors only; do not paste complete runtime configuration or identifying logs.
